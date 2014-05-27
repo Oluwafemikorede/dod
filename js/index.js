@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     var getQuestion = function() {
   console.log('step 5');
-        $.get("http://localhost/dod/questions/top", function(data) {
+        $.get("http://exolvetechnologies.com/dod/questions/top", function(data) {
   console.log('step 6');
             console.log(data);
               console.log('step 7');
@@ -62,7 +62,7 @@ $(document).ready(function() {
                 if (value.image.length === 0) {
                 append_data +=  "<p>"+answer+"</p>";
                 } else {
-                append_data +=  "<p><img src='http://localhost/dod/" + value.image + "'/>"+answer+"</p>";
+                append_data +=  "<p><img src='http://exolvetechnologies.com/dod/" + value.image + "'/>"+answer+"</p>";
                 }
 
                append_data += "<a class='button' style='color: #FFF;' href='page.html?q_id=" + value.id + "' ><center>READ MORE</center></a></article></div>";

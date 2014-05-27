@@ -22,7 +22,7 @@ $(document).ready(function() {
 
         var dbkey = "myquestion_" + q_id;
 
-        $.get("http://localhost/dod/questions/mysingleanswer/" + q_id, function(data) {
+        $.get("http://exolvetechnologies.com/dod/questions/mysingleanswer/" + q_id, function(data) {
 
             console.log(data);
             var storeValue = JSON.stringify(data);
@@ -66,7 +66,7 @@ $(document).ready(function() {
 
             //if (value.image.length === 0) {
             if (value.question.image != '') {
-               append_data += "<img src='http://localhost/dod/" + value.question.image + "'/><span>" + answer + "</span></fieldset>";
+               append_data += "<img src='http://exolvetechnologies.com/dod/" + value.question.image + "'/><span>" + answer + "</span></fieldset>";
             } else {
                append_data += "<span style='color: #000; font-weight:500' ><br>&nbsp;&nbsp;" + answer + "</span></fieldset>";                
             }

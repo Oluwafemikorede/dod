@@ -11,7 +11,7 @@ $(document).ready(function() {
 
          if (window.localStorage.getItem("dod_user_id") === null)
             {
-                $.post("http://localhost/dod/questions/register", 
+                $.post("http://exolvetechnologies.com/dod/questions/register", 
                     { name: name, email: email, phone: phone, gender: gender, about: about}, 
                   function(data) {
                     if(data.message == 'ok')

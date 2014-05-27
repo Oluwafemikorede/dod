@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     var myQuestion = function() {
            var user_id = window.localStorage.getItem("dod_user_id");
-        $.get("http://localhost/dod/questions/myquestions/"+user_id, function(data) {
+        $.get("http://exolvetechnologies.com/dod/questions/myquestions/"+user_id, function(data) {
   
             var myQuestions = JSON.stringify(data);
             console.log(myQuestions);
@@ -48,7 +48,7 @@ $(document).ready(function() {
                 append_data += "<span style='color: #000; font-weight:500'><br>&nbsp;&nbsp;" + answer + "</span>";
                 append_data += "<a class='button' style='color: #FFF;' href='myquestion-read.html?q_id=" + value.id + "' ><center>READ MORE</center></a></fieldset>";
             } else {
-                append_data += "<img src='http://localhost/dod/" + value.image + "'/><span style='color: #000; font-weight:500'>" + answer + "</span>";
+                append_data += "<img src='http://exolvetechnologies.com/dod/" + value.image + "'/><span style='color: #000; font-weight:500'>" + answer + "</span>";
                 append_data += "<a class='button' style='color: #FFF;' href='myquestion-read.html?q_id=" + value.id + "' ><center>READ MORE</center></a></fieldset>";
             }
              $("#questionContent").after(append_data);
