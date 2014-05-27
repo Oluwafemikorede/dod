@@ -54,8 +54,14 @@ $(document).ready(function() {
               //   append_data += "<span class='date' style='color: #000; font-weight:500'>" + value.fname + "  " + value.lname + "</span>";
               //   append_data += "<span class='date pull-right'>" + value.created_at + "</span>";
 
-
-            var append_data = "<div><input id='ac-"+i+"' name='accordion-1' type='radio' />";
+              var append_data = "";
+              if(i == 1)
+              {
+                append_data += "<div><input id='ac-"+i+"' name='accordion-1' type='radio' checked />";
+              } else {
+                append_data += "<div><input id='ac-"+i+"' name='accordion-1' type='radio' />";
+              }
+                // append_data += "<div><input id='ac-"+i+"' name='accordion-1' type='radio' />";
                 append_data +=  "<label for='ac-"+i+"'>"+value.question+"</label>";
                 append_data +=  "<article class='ac-large'>";
 
