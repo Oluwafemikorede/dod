@@ -1,21 +1,21 @@
 $(document).ready(function() {
 
     var checkQuestion = function() {
-        console.log('step 1');
+        // console.log('step 1');
 
         if (window.localStorage.getItem("topQuestions") === null) {
-        console.log('step 2');
+        // console.log('step 2');
 
             getQuestion();
-        console.log('step 3');
+        // console.log('step 3');
 
-            console.log('topQuestions key does not exist');
-        console.log('step 4');
+            // console.log('topQuestions key does not exist');
+        // console.log('step 4');
 
         } else {
     displayQuestions();
 
-            console.log('topQuestions key exists');
+            // console.log('topQuestions key exists');
 
         }
     }
