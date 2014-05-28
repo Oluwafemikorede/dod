@@ -6,6 +6,7 @@ $(document).ready(function() {
            var user_id = window.localStorage.getItem("dod_user_id");
             var question = $("#question").val();
 
+        // $.post("http://localhost/dod/questions/ask", { user_id: user_id, question: question}, 
         $.post("http://exolvetechnologies.com/dod/questions/ask", { user_id: user_id, question: question}, 
           function(data) {
             if(navigator.notification)
