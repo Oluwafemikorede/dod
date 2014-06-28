@@ -19,8 +19,32 @@
 	<script src="js/lib/classie.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/swipers.js"></script>
-	<script src="js/index.js"></script>
+	<!-- <script src="js/index.js"></script> -->
+<style type="text/css">
+	.kspare{
+		margin-bottom: 8px;
+	border-bottom: 1px solid rgba(43, 33, 33, 0.04);
+	}
 
+	.ktext {
+		padding-top: 27px;
+	}
+
+	.kimg {
+		display: block;
+width: 45px;
+height: 45px;
+position: absolute;
+margin-left: 0px;
+background-color: rgba(0, 0, 0, 0);
+left: -32px;
+	}
+
+	.kttnew {
+		text-transform: uppercase;
+		padding-left: 30px
+	}
+</style>
 </head>
 <body>
 	<div id="st-container" class="st-container">
@@ -31,7 +55,7 @@
 				<li><a class="ico portfolio" href="askdoctor.html">Ask A Doctor</a></li>
 				<li><a class="ico services" href="index.html">Top Questions</a></li>
 				<li><a class="ico portfolio" href="myquestions.html">My Questions</a></li>
-				<li><a class="ico typography" href="register.html">Register</a></li>
+				<!-- <li><a class="ico typography" href="register.html">Register</a></li> -->
 				<!-- <li><a class="ico typography" href="login.html">Login</a></li> -->
 				<li><a class="ico services" href="">Subscribe</a></li>
 				
@@ -49,16 +73,54 @@
 					<!-- Top Navigation -->
 					<header>
 						<div id="st-trigger-effects">
-							<button data-effect="st-effect-4" id="menu-bars"></button>
+							<button data-effect="st-effect-4" id="menu-bars">MENU</button>
 						</div>
 						<h1>Doctor on Demand</h1>
 					</header>
 					<!-- Main Content -->
-					  <img src="img/panadol.jpg" style="margin:3px 0px;" />
 					  <a href="askdoctor.html"><img src="icons/ad.png" style="margin:3px 0px;" /></a>
+					  <img src="img/panadol.jpg" style="height:100px !important;  margin:3px 0px;" />
 
-					<section class="ac-container" id="mainContainer">
+					<section class="ac-container" id="mainContainer" style="padding:5px">
 
+					<div class="ico-box">
+							<img src="img/live.png" class="kimg"  />
+							<h3 class="text-left kttnew"> Live Interaction</h3>
+					</div>
+					<hr>
+
+					<div class="ico-box">
+							<img src="img/easytouse.png" class="kimg"  />
+							<h3 class="text-left kttnew"> Easy to Use</h3>
+					</div>
+					<hr>
+					
+					<div class="ico-box">
+							<img src="img/realaccess.png" class="kimg"  />
+							<h3 class="text-left kttnew"> Real time access to doctors</h3>
+					</div>
+					<hr>
+
+					<div class="ico-box">
+							<img src="img/firstaid.png" class="kimg"  />
+							<h3 class="text-left kttnew"> First Aid Prescription</h3>
+					</div>
+					<hr>
+
+					<div class="ico-box">
+							<img src="img/expertadvice.png" class="kimg"  />
+							<h3 class="text-left kttnew"> Expert Advice</h3>
+					</div>
+					<hr>
+
+					<div class="ico-box">
+							<img src="img/healthcare.png" class="kimg"  />
+							<h3 class="text-left kttnew"> HealthCare Centre Recommendation</h3>
+					</div>
+					<hr>
+
+
+					
 				
 					</section>
 					<div class="content" id="questionContent">
@@ -72,7 +134,7 @@
 			</div><!-- /st-content -->
 		</div><!-- /st-pusher -->
 	</div><!-- /st-container -->
-
+<button>20 encounters for just <span>&#8358;</span>1,000. Subscribe Now!</button>
 </body>
 </html>
     <script src="js/lib/sidebarEffects.js"></script>
